@@ -1,0 +1,79 @@
+/* Create a top navigation bar with a black background color  */
+/* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} */
+.navbar {
+  background-color: white;
+  overflow: hidden;
+  border: 2px solid pink;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #0c0c0c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.navbar a.split {
+  float: right;
+  background-color: white;
+  color: rgb(9, 0, 0);
+}
+
+.btn {
+  background-color: #0c0c0c;
+  display: flex;
+  position: relative;
+  left: 30%;
+  border: 2px solid pink;
+}
+.heading1 {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  border: 2px solid pink;
+}
+
+.heading2 {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  border: 2px solid pink;
+}
+
+.heading3 {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  border: 2px solid pink;
+}
+
+.heading4 {
+  display: flex;
+  position: relative;
+  left: 43%;
+  margin-top: -3%;
+}
+
+.btn {
+  font-family: "sans-serif";
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  position: relative;
+  left: 50%;
+  margin-top: -1%;
+}

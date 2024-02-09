@@ -1,0 +1,48 @@
+.container {
+  width: 10px;
+  margin-top: 4%;
+}
+
+span {
+  color: red;
+}
+
+#mani {
+  background-color: #FF4B1F;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bolder;
+  width: 250px;
+}
+
+.container-texts {
+  float: right;
+  background-color: #FF4B1F;
+  color: white;
+  border-radius: 0px 15px 20px 0px;
+  padding: 30px;
+}
+
+.container-texts,
+h1 {
+  text-align: right;
+}
+
+
+
+@media screen and  (max-width:500px) {
+
+  .imageAdventure,img{
+    max-width: 40%;
+  }
+  /* .container-texts{
+  font-size: 0.1rem;
+  } */
+}
+
+
+
+
+
+
