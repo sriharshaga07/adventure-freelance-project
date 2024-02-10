@@ -100,6 +100,13 @@
       width: 50%;
       font-weight: bolder;
     }
+    .btn-submit{
+      width: 20%;
+      font-weight: bolder;
+      border: #6764E2;
+      border-radius: 9px;
+      font-size: larger;
+    }
 
     .form-label {
       color: gray;
@@ -108,9 +115,55 @@
     span {
       color: red;
     }
-    .conta-position div {
+    .conta-position div {    
+      position: relative;     
+    }
+
+    .conta-position{
+      position: relative;
+    }
+
+    .container-formtexts{
+      display: flex;
       float: left;
-      clear: none;
+      background-color: #6764E2;
+      color: white;
+      font-size: 50px;
+      border-radius: 15px 0px 0px 20px;
+      padding:30px;
+      text-align: left;
+      margin-left: -42px;
+    }
+
+    .imageHireFromUs{
+      max-width: 50%;
+      /* Ensure the image doesn't exceed its container */
+      display: block;
+      /* Remove extra spacing below the image */
+      margin-top: 200px;
+      /* Add some space between the text and image */
+      position: inherit;
+      left: 5%;
+    }
+
+    .container-lists{
+      background-color: #1B998B;
+      padding: 30px 90px 20px 15px ;
+      color: #ffffff;
+      border-radius: 20px;
+      font-size: large;
+    }
+
+    .foothead{
+      color: black;
+      text-align: center;
+      margin-top: 5%;
+      font-weight: bolder;
+    }
+
+    .foothead span{
+      color: #FF4B1F;
+      font-style: italic;
     }
 
     /* section {
@@ -120,6 +173,7 @@
   </style>
 
   <body>
+    <!--GetAdventure -->
     <section id="getAdventure">
       <!-- <a href="#placements">placement</a> -->
       <div
@@ -186,23 +240,13 @@
           </div>
         </div>
       </div>
+      <!--GetAdventure Ends here-->
+
+
       <!-- Hire From US -->
-      <div class="container conta-position">
-        <div style="background-color: #ffffff">
-          <h1
-            class="text"
-            style="
-              display: flex;
-              float: left;
-              text-align: left;
-              padding-left: 4%;
-              margin-top: 5%;
-            "
-          >
-            Tired of resumes that <br />
-            oversell & underdeliver? &nbsp;
-          </h1>
-          <br /><br /><br /><br /><br />
+      <div class="container conta-position mb-5" >
+          
+          
           <p
             style="
               display: flex;
@@ -214,7 +258,27 @@
             At AdVenture, we focus on practical skills & real-world <br />
             readiness to bridge the gap between potential & performance.
           </p>
-          <img src="Images/Hire from us .png" alt="ImageNotFound" style="border: 2px solid red; display: flex; width: 100%; position: relative; left: 1%;">
+          <div class="container-img">
+          <img
+            src="Images/Hire from us .png"
+            alt="ImageNotFound"
+            style="
+              border: 2px solid red;
+              display: flex;
+              width: 100%;
+              position: relative;
+              left: 1%;
+            "
+          />
+          <div class="container">
+            <h1 style="position: absolute;
+            display: flex;
+            float: left;
+            text-align: left;
+            padding: 0px 0px 0px 10px;
+          ">Tired of resumes that <br />
+              oversell & underdeliver?</h1>
+          </div>
           <br /><br /><br />
           <h5
             style="
@@ -226,21 +290,139 @@
           >
             Our graduates aren’t just book-smart, they’re action-oriented.
           </h5>
+          </div>
         </div>
-        <div style="background-color: #ffffff; margin-left: 20px">
-          <h1 class="texts">Hire our AdVisors</h1>
-        </div>
+        
       </div>
       <!-- Hire From Us Ends -->
+
+    
+      <!-- hireFromUs New Form-->
+      <div
+        class="container shadow mb-5 bg-white rounded"
+        style="padding-right: 0px"
+      >
+        <div class="content" style="padding-right: 0px">
+          <div class="right-column">
+            <h1 class="container-formtexts">Find Your <br />ideal candidate.</h1>
+            <img
+              class="imageHireFromUs"
+              src="Images/HumanAvatarHire.png"
+              style="width: 300px;"
+              alt="ImageNotFound"
+            />
+          </div>
+          <form>
+            <!-- Your form elements go here -->
+            <div class="mb-3 col-xs-3">
+              <label for="name" class="form-label">Name <span>*</span></label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Company email <span>*</span></label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label"
+                >Phone No. <span>*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="Phone No."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="course" class="form-label"
+                >Designation <span>*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="designation"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="course" class="form-label"
+                >Company Name </label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="designation"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label"
+                >Drop your requirement </label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="text goes here"
+              />
+            </div>
+            <button
+              type="button"
+              class="btn-submit"
+              style="background-color: #6764E2; color: #ffffff"
+            >
+            Submit
+            </button>
+          </form>
+          
+        </div>
+      </div>
+      <!--hireFromUs New Form ends-->
+      <div class="container-lists">
+        <p><b>Ready to skip the resume shuffle and find talent that clicks?</b> Browse our graduate profiles, connect with <br>
+          our placement team, and discover the difference between hiring "qualified" and hiring ready.</p><br><br>
+          <p><b>Our AdVenture Academy Badge Holder has ideally the following traits:</b> <br> <br>
+            - Has a good understanding of verbal and communication skills <br>
+            - Has an emotional approach towards creating impressive campaigns<br>
+            - Has practical approach into campaign strategies<br>
+            - Have a good understanding of how PPC fits into the wider digital marketing mix<br>
+            - Have a passion for PPC and digital marketing in general<br>
+            - Have a good attention to detail<br>
+            - Be a self-starter who can work under their own initiative<br>
+            - A good understanding of Business, B2B and B2C models<br>
+            - A basic understanding of analytics & marketing tools <br>
+            - A strong drive to experiment, learn & grow<br>
+            - A good team player, with a positive attitude and a desire to make a difference<br>
+            - Is adaptable and can mold according to task/project requirements<br>
+            - Is trained to know how to take and implement feedback<br>
+            - Comes with inherited analytical/cognitive mindset<br>
+            - Has 15 days of agency experience<br>
+            - Understands startup culture<br>
+            - Is trained to work in cross domains<br>
+            - Collaborated with our design, developer team</p>
+      </div>
+      <h1 class="foothead">Invest in future. Hire from <span>AdVenture!</span></h1>
       <!-- Placement-->
       <br />
+      
       <img
         id="placements"
         src="Images/PlacementPageAvatar.png"
         alt="imageNotFound"
-        style="position: inherit; float: right; width: 200px"
+        style="position: inherit; float: right; width: 200px;"
+
       />
-      <div class="container" style="font-size: 1.1em">
+      <div class="container" style="font-size: 1.1em; margin-top: 10%;">
         <p class="mb-5">
           <b>Tired of getting lost in the crowd of rejected candidates?</b> At
           Adventure Academy ,<br />
@@ -280,6 +462,5 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <!--placements ends here-->
   </body>
 </html>
