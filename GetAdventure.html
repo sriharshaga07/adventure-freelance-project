@@ -14,11 +14,11 @@
   </head>
   <style>
     body {
-      margin: 0;
+      /* margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: center; */
       /* height: 100vh; */
       background-color: #e7eff9;
     }
@@ -96,7 +96,7 @@
       /* Adjust the width for the password input */
     }
 
-    .btn {
+    .button-from {
       width: 50%;
       font-weight: bolder;
     }
@@ -144,8 +144,9 @@
       /* Add some space between the text and image */
     }
 
-    .left-column{
-      position: static;
+    .left-column h1{
+      position: relative;
+      bottom: 30px;
     }
     
     .container-lists{
@@ -154,9 +155,9 @@
       color: #ffffff;
       border-radius: 20px;
       font-size: large;
-      /* width: 85%;
+      width: 85%;
       position: relative;
-      left: 7.5%; */
+      left: 7.5%;
     }
 
     .foothead{
@@ -173,16 +174,27 @@
 
     .container-about{
       background-color: #ffffff;
+      color: #000;
       border-radius: 20px;
-      /* width: 85%;
+      width: 85%;
       position: relative;
-      left: 7.5%; */
+      left: 7.5%;
     }
     
     .aboutHead{
-      text-align: center;
+      /* text-align: center; */
+      position: inherit;
+      right: 15%;
       font-weight: bold;
       padding-top: 5%;
+    }
+
+    .container-about img{
+      width: 30%;
+      position: relative;
+      float: right; 
+      clear: none; 
+      margin-top: 4%;
     }
 
     .para-about{
@@ -195,9 +207,9 @@
       background-color: #8BD7EE;
       border-radius: 20px;
       padding: 1px;
-      /* width: 85%;
+      width: 85%;
       position: relative;
-      left: 7.5%; */
+      left: 7.5%;
     }
 
     .container-small p{
@@ -212,15 +224,18 @@
       border-radius: 20px;
       padding: 1px 10px 10px 10px;
       margin-top: 1.5%;
-      /* width: 85%;
+      width: 85%;
       position: relative;
-      left: 7.5%; */
+      left: 7.5%;
     }
 
     .container-vision .visionHead{
-      text-align: center;
+      /* text-align: center; */
+      position: inherit;
+      right: 30%;
       font-weight: bold;
       padding-top: 5%;
+      color: #000;
     }
 
     .container-vision p{
@@ -234,15 +249,18 @@
       border-radius: 20px;
       padding: 1px 10px 10px 10px;
       margin-top: 1.5%;
-      /* width: 85%;
+      width: 85%;
       position: relative;
-      left: 7.5%; */
+      left: 7.5%;
     }
 
     .conatiner-comp h1{
-      text-align: center;
+      /* text-align: center; */
+      position: inherit;
+      right: 15%;
       font-weight: bold;
       padding-top: 5%;
+      color: #000;
     }
 
     .conatiner-comp p{
@@ -256,15 +274,159 @@
       padding-left: 60px;
     }
 
-    /* HomePage Styling */
-    
-    /* HomePage Styling Ends Here */
+    /* home page css style */
+
+    .home-container {
+        position: relative;
+    }
+
+    .home-inside-images {
+        position: absolute;
+        left: 18%;
+        top: 14%;
+    }
+
+    .home-inside2-images {
+        position: absolute;
+        left: 39%;
+        top: 17%;
+    }
+
+    .home-inside3-images {
+        position: absolute;
+        left: 59%;
+        top: 14%;
+    }
+
+    .insde-heading {
+        position: absolute;
+        left: 28%;
+        top: 5%;
+    }
+
+    .insde-heading h4{
+        color: #000;
+        padding-left: 8%;
+        font-weight: lighter;
+        /* font-size: xx-large; */
+        margin-bottom: 1%;
+    }
+    .insde-heading h2{
+      color: #000;
+    }
+    .insde-heading p{
+      text-align: center;
+    }
+    .home-insde-button{
+        text-align: center;
+    }
+/* home page css style ends here */
+
+.btnfoot {
+      width: 20%;
+      color: #E76F51;
+      font-weight: bold;
+      border-radius: 20px;
+      border: 0cap;
+      padding: 1%;
+      font-size: xx-large;
+    }
+
+    .container-footer p{
+      font-size: xx-large;
+      background-color: #E76F51;
+      padding: 5%;
+      font-weight:bold;
+      font-size: xx-large; 
+      margin-top: 3%;
+      font-style: italic;
+    }
+
+    .navbar img{
+ width: 200px;
+ float: left;
+
+   }
+    .navbar{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .nav-item a{
+      text-decoration: none;
+      cursor: pointer;
+      color: #000;
+    }
+
+    .content-shruthi li::marker{
+      color: yellow;
+    }
+
+    /* section {
+    display: flex;
+    flex-direction: column
+  } */
+  @media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
   </style>
 
   <body>
-    <!-- Home Design -->
+    <!--Navbar-->
+      <nav class="navbar">
+                  <img src="Images/AdVenture Logo.png" alt="Logo"/>
+              <ul class="nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">
+                          Our Competitors
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#">
+                          Courses
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#">
+                          Placements
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active">Hire From Us </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="btn btn-dark nav-link active " aria-current="page" type="button" href="#" >
+                          WhatsApp: 9591961505
+                      </a>
+                  </li>
+              </ul>
+          
+      </nav>
+
+
+    <!--Navbar ends here-->
     
-    <!-- Home Design Ends -->
+    <!-- Home Design -->
+    <div class="container-fluid home-container">
+        <img class="home-bacbackground-images" src="Images/1st sheet .png" width="100%"
+            alt="ImageNotFound">
+        <img class="home-inside-images" src="Images/Avatar image 3.png" alt="imageNotFound">
+        <img class="home-inside2-images" src="Images/Avatar image 1.png" alt="imageNotFound">
+        <img class="home-inside3-images" src="Images/Avatar image 2.png" alt="imageNotFound">
+        <div class="insde-heading">
+            <h4>Banglore's first</h4>
+            <h2><span style="background-color: #E8D075; color: #000; padding: 0px 0px 3px 15px; border-radius: 40px;">Agency Bas</span>ed Academy <br>
+                <span style="color: #000; padding-left: 40px;"> For Digital Marketing</span>
+            </h2>
+            <p>Choose roles that resonates your skills</p>
+            <div class="home-insde-button">
+                <button class="btn btn-dark">Get AdVntr'd</button>
+            </div>
+        </div>
+    </div>
+    <!-- Home Design Ends -->
     <!--GetAdventure -->
     <section id="getAdventure">
       <!-- <a href="#placements">placement</a> -->
@@ -315,7 +477,7 @@
             </div>
             <button
               type="button"
-              class="btn"
+              class="btn button-from"
               style="background-color: #ff4b1f; color: #ffffff"
             >
               Request a call-back
@@ -509,7 +671,7 @@
         style="position: inherit; float: right; width: 200px;"
 
       />
-      <div class="container" style="font-size: 1.1em; margin-top: 10%;">
+      <div class="container" style="font-size: 1.1em;">
         <p class="mb-5">
           <b>Tired of getting lost in the crowd of rejected candidates?</b> At
           Adventure Academy ,<br />
@@ -547,7 +709,8 @@
       <!-- About Us -->
     
       <div class="container-about">
-        <h1 class="aboutHead">About us</h1>
+        <img src="Images/Line art 1 v2 aboutUs.png" alt="ImageNotFound" style="width: 30%;position: relative; float: right; clear: none; margin-top: 4%;">
+        <h1 class="aboutHead"><span style="background-color: #E76F51;color: #000;padding: 1px 0px 1px 25px; border-radius: 50px;">Abou</span>t us</h1>
         <p class="para-about"><b>Back in 2012, I was doing research for a presentation and stumbled upon a big problem.</b> <br>
           India had tons of people with degrees, but companies couldn't find enough qualified workers! <br>
           Graduates were stuck without jobs, while big companies didn't hire them. <br><br>
@@ -575,7 +738,8 @@
       
       <!--Our Vision-->
       <div class="container-vision">
-      <h1 class="visionHead">Our vision</h1>
+        <img src="Images/Line art 1 v2.png" alt="ImageNotFound" style="width:12%;position: relative; float: right; clear: none; margin-top: 2%;">
+      <h1 class="visionHead">Our<span style="background-color: #E76F51;color: #000;padding: 1px 6px 1px 10px; border-radius: 50px;">vision</span></h1>
       <p ><b>We see a talent gap india.</b> People are bursting with ideas and starting ventures,but finding <br>
          skilled teams is a struggle. On the other hand,<b>freshers and career seekers are eager for <br> 
           opportunities. </b> They want to jump in and contribute,but lack the skills or the skills or the right platform to connect <br> 
@@ -592,8 +756,11 @@
 
     <!--Our Competitors-->
     <div class="conatiner-comp">
+      <img src="Images/Twinkling star .png" alt="ImageNotFound" style="width:3%;position: relative; float: left; clear: none; margin-top: 3%;margin-left:5%;">
+      <img src="Images/Twinkling star .png" alt="ImageNotFound" style="width:2%;position: relative; float: left; clear: none; margin-top: 6%;margin-left: 1;">
+      <img src="Images/Line art 1 v2 comp.png" alt="ImageNotFound" style="width:15%;position: relative; float: right; clear: none; margin-top: 3%;margin-left:5%;">
       <h1>
-        Our Competitors
+        Our Com<span style="background-color: #E76F51;color: #000;padding: 1px 20px 10px 1px; border-radius: 50px;">petitors</span>
       </h1>
       <p>
         <span style="color: #212529; font-size: 18px;">Confused about your career? Everyone's screaming <b>"Digital Marketing is the future!"</b><br>
@@ -653,6 +820,66 @@
         </p>
   </div>
     <!--Our Competitors ends here-->
+
+    <!--Footer-->
+      <div class="container-footer">
+        <p>Skill is an investment. <br>
+          Make skill-centric decision
+          <button class="btnfoot btn-dark btn-lg" href="#" style="float: right;">Get AdVntr'd</button>
+        </p>  
+      </div>
+      <div class="container-empty" style="background-color: #20232B;">
+<br><br><br><br><br><br><br>  <br><br><br>
+      </div>
+    <!--Footer ends here-->
+
+    <!--Authors-->
+<div class="container-fluid" style="color: #ffffff;">
+  <div class="container-shruthi" style="width: fit-content; background-color: #B486AB; margin:40px 0px 0px 40px; border-radius: 20px; display: flex;">
+    <img src="Images/Shruti bharadwaj.png" alt="ImageNotFound" style="width: 20%;">
+    <div style="margin-left: 5%;">
+      <h3>Shruthi Bharadwaj</h3>
+      <p>Speaker | Entrepreneur | Mentor</p>
+      <div style="display: flex;">
+        <ul class="content-shruthi">
+          <li>13+ Years Experience</li>
+          <li>Mentor at Startup TN</li>
+          <li>Speaker at MSME, CEDOK, LUBK,<br>
+            Ubuntu Consortium</li>
+        </ul>
+        <ul class="content-shruthi">
+          <li>13+ Years Experience</li>
+          <li>Mentor at Startup TN</li>
+          <li>Speaker at MSME, CEDOK, LUBK,<br>
+            Ubuntu Consortium</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-prem" style="width: 100%; background-color: #A882DD; margin:70px 40px 100px 0px; border-radius: 20px; float: right; ">
+    <img src="Images/Prem.png" alt="ImageNotFound" style="width: 25%; float: right;">
+    <div style="margin-right: 5%;">
+      <div style="display: flex; flex-direction: column; align-items: end;">
+        <h3 style="margin-right: 5%;">Prem Anand S</h3>
+      <p style="margin-right: 5%;">Speaker | Entrepreneur | Mentor</p>
+      </div>
+      <div style="display: flex; float: right; margin-right: 5%;">
+        <ul class="content-shruthi">
+          <li>13+ Years Experience</li>
+          <li>Mentor at Startup TN</li>
+          <li>Speaker at MSME, CEDOK, LUBK,<br>
+            Ubuntu Consortium</li>
+        </ul>
+        <ul class="content-shruthi">
+          <li>13+ Years Experience</li>
+          <li>Mentor at Startup TN</li>
+          <li>Speaker at MSME, CEDOK, LUBK,<br>
+            Ubuntu Consortium</li>
+        </ul>
+      </div>
+  </div>
+</div>
+    <!--Author ends here-->
     </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
