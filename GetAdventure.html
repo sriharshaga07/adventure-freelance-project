@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AdVenture academy</title>
+    <link rel="stylesheet" href="GetAdventure.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      /* margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center; */
+      /* height: 100vh; */
+      background-color: #e7eff9;
+    }
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdVenture academy</title>
-  <link rel="stylesheet" href="GetAdventure.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
-<style>
+    .container {
+      width: 100vw;
+      border-radius: 20px !important;
+    }
 
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    background-color: #E7EFF9;
+    .content {
+      display: flex;
+      padding: 30px;
+    }
 
-  }
+    form {
+      flex: 1;
+      /* Take up equal space */
+      padding-left: 40px;
+      /* Add padding on the right side of the form */
+    }
 
-  .container {
-    width: 100vw;
-    border-radius: 2% !important;
-  }
+    form label,
+    form input,
+    form button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
 
-  .content {
-    display: flex;
-    padding: 30px;
-  }
-
-  form {
-    flex: 1;
-    /* Take up equal space */
-    padding-left: 40px;
-    /* Add padding on the right side of the form */
-  }
-
-  form label,
-  form input,
-  form button {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  /* .right-column {
+    /* .right-column {
   flex: 1;
   padding: 20px;
   display: flex;
@@ -58,404 +59,832 @@
   text-align: right;
 } */
 
-  .right-column {
-    flex: 1;
-    position: relative;
-    bottom: 30px;
-  }
+    .right-column {
+      flex: 1;
+      position: relative;
+      bottom: 30px;
+    }
 
-  img {
-    max-width: 100%;
-    /* Ensure the image doesn't exceed its container */
-    display: block;
-    /* Remove extra spacing below the image */
-    margin-top: 10px;
-    /* Add some space between the text and image */
-    position: relative;
-    left: 40%;
-  }
+    .right-column img {
+      max-width: 100%;
+      /* Ensure the image doesn't exceed its container */
+      display: block;
+      /* Remove extra spacing below the image */
+      margin-top: 10px;
+      /* Add some space between the text and image */
+      position: relative;
+      left: 40%;
+    }
 
-  #name {
-    width: 80%;
-    /* Adjust the width for the username input */
-  }
+    #name {
+      width: 80%;
+      /* Adjust the width for the username input */
+    }
 
-  #email {
-    width: 80%;
-    /* Adjust the width for the password input */
-  }
+    #email {
+      width: 80%;
+      /* Adjust the width for the password input */
+    }
 
-  #phone {
-    width: 80%;
-    /* Adjust the width for the password input */
-  }
+    #phone {
+      width: 80%;
+      /* Adjust the width for the password input */
+    }
 
-  #course {
-    width: 80%;
-    /* Adjust the width for the password input */
-  }
+    #course {
+      width: 80%;
+      /* Adjust the width for the password input */
+    }
 
-  .btn {
-    width: 50%;
-    font-weight: bolder;
-  }
+    .button-from {
+      width: 50%;
+      font-weight: bolder;
+    }
+    .btn-submit{
+      width: 20%;
+      font-weight: bolder;
+      border: #6764E2;
+      border-radius: 9px;
+      font-size: larger;
+    }
 
-  .form-label {
-    color: gray;
-  }
+    .form-label {
+      color: gray;
+    }
 
-  span {
-    color: red;
-  }
-  .conta-position div{
-    float: left;
-    clear: none;
-  }
+    span {
+      color: red;
+    }
+    .conta-position div {    
+      position: relative;     
+    }
 
-  /* section {
+    .conta-position{
+      position: relative;
+    }
+
+    .container-formtexts{
+      display: flex;
+      float: left;
+      background-color: #6764E2;
+      color: white;
+      font-size: 50px;
+      border-radius: 15px 0px 0px 20px;
+      padding:30px;
+      text-align: left;
+      margin-left: -42px;
+    }
+
+    .imageHireFromUs{
+      max-width: 50%;
+      /* Ensure the image doesn't exceed its container */
+      display: block;
+      /* Remove extra spacing below the image */
+      margin-top: 200px;
+      /* Add some space between the text and image */
+    }
+
+    .left-column h1{
+      position: relative;
+      bottom: 30px;
+    }
+    
+    .container-lists{
+      background-color: #1B998B;
+      padding: 30px 90px 20px 15px ;
+      color: #ffffff;
+      border-radius: 20px;
+      font-size: large;
+      width: 85%;
+      position: relative;
+      left: 7.5%;
+    }
+
+    .foothead{
+      color: black;
+      text-align: center;
+      margin-top: 5%;
+      font-weight: bolder;
+    }
+
+    .foothead span{
+      color: #FF4B1F;
+      font-style: italic;
+    }
+
+    .container-about{
+      background-color: #ffffff;
+      color: #000;
+      border-radius: 20px;
+      width: 85%;
+      position: relative;
+      left: 7.5%;
+    }
+    
+    .aboutHead{
+      /* text-align: center; */
+      position: inherit;
+      right: 15%;
+      font-weight: bold;
+      padding-top: 5%;
+    }
+
+    .container-about img{
+      width: 30%;
+      position: relative;
+      float: right; 
+      clear: none; 
+      margin-top: 4%;
+    }
+
+    .para-about{
+      text-align: left;
+      padding: 0px 0px 70px 40px;
+      margin-top: 5%;
+    }
+
+    .container-small{
+      background-color: #8BD7EE;
+      border-radius: 20px;
+      padding: 1px;
+      width: 85%;
+      position: relative;
+      left: 7.5%;
+    }
+
+    .container-small p{
+      text-align: left;
+      padding-left: 3%;
+      margin-top: 1%;
+     font-weight: bold;
+    }
+
+    .container-vision{
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 1px 10px 10px 10px;
+      margin-top: 1.5%;
+      width: 85%;
+      position: relative;
+      left: 7.5%;
+    }
+
+    .container-vision .visionHead{
+      /* text-align: center; */
+      position: inherit;
+      right: 30%;
+      font-weight: bold;
+      padding-top: 5%;
+      color: #000;
+    }
+
+    .container-vision p{
+      text-align: left;
+      padding: 0px 0px 50px 40px;
+      margin-top: 4%;
+    }
+
+    .conatiner-comp{
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 1px 10px 10px 10px;
+      margin-top: 1.5%;
+      width: 85%;
+      position: relative;
+      left: 7.5%;
+    }
+
+    .conatiner-comp h1{
+      /* text-align: center; */
+      position: inherit;
+      right: 15%;
+      font-weight: bold;
+      padding-top: 5%;
+      color: #000;
+    }
+
+    .conatiner-comp p{
+      text-align: left;
+      padding: 0px 0px 20px 40px;
+      margin-top: 4%;
+    }
+
+    .conatiner-comp .span{
+      list-style-type: none;
+      padding-left: 60px;
+    }
+
+    /* home page css style */
+
+    .home-container {
+        position: relative;
+    }
+
+    .home-inside-images {
+        position: absolute;
+        left: 18%;
+        top: 14%;
+    }
+
+    .home-inside2-images {
+        position: absolute;
+        left: 39%;
+        top: 17%;
+    }
+
+    .home-inside3-images {
+        position: absolute;
+        left: 59%;
+        top: 14%;
+    }
+
+    .insde-heading {
+        position: absolute;
+        left: 28%;
+        top: 5%;
+    }
+
+    .insde-heading h4{
+        color: #000;
+        padding-left: 8%;
+        font-weight: lighter;
+        /* font-size: xx-large; */
+        margin-bottom: 1%;
+    }
+    .insde-heading h2{
+      color: #000;
+    }
+    .insde-heading p{
+      text-align: center;
+    }
+    .home-insde-button{
+        text-align: center;
+    }
+/* home page css style ends here */
+
+.btnfoot {
+      width: 20%;
+      color: #E76F51;
+      font-weight: bold;
+      border-radius: 20px;
+      border: 0cap;
+      padding: 1%;
+      font-size: xx-large;
+    }
+
+    .container-footer p{
+      font-size: xx-large;
+      background-color: #E76F51;
+      padding: 5%;
+      font-weight:bold;
+      font-size: xx-large; 
+      margin-top: 3%;
+      font-style: italic;
+    }
+
+    .navbar img{
+ width: 200px;
+ float: left;
+
+   }
+    .navbar{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .nav-item a{
+      text-decoration: none;
+      cursor: pointer;
+      color: #000;
+    }
+
+    .content-shruthi li::marker{
+      color: yellow;
+    }
+
+    /* section {
     display: flex;
     flex-direction: column
   } */
-</style>
+  @media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+  </style>
 
-<body> 
-  <section id="getAdventure">
-  <!-- <a href="#placements">placement</a> -->
-    <div class="container shadow  mb-5 bg-white rounded" style="padding-right: 0px;">
-      <div class="content" style="padding-right: 0px;">
-        <form>
-          <!-- Your form elements go here -->
-          <div class="mb-3 col-xs-3">
-            <label for="name" class="form-label">Name <span>*</span></label>
-            <input type="text" class="form-control" id="name" placeholder="Name">
+  <body>
+    <!--Navbar-->
+      <nav class="navbar">
+                  <img src="Images/AdVenture Logo.png" alt="Logo"/>
+              <ul class="nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">
+                          Our Competitors
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#">
+                          Courses
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#">
+                          Placements
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active">Hire From Us </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="btn btn-dark nav-link active " aria-current="page" type="button" href="#" >
+                          WhatsApp: 9591961505
+                      </a>
+                  </li>
+              </ul>
+          
+      </nav>
+
+
+    <!--Navbar ends here-->
+    
+    <!-- Home Design -->
+    <div class="container-fluid home-container">
+        <img class="home-bacbackground-images" src="Images/1st sheet .png" width="100%"
+            alt="ImageNotFound">
+        <img class="home-inside-images" src="Images/Avatar image 3.png" alt="imageNotFound">
+        <img class="home-inside2-images" src="Images/Avatar image 1.png" alt="imageNotFound">
+        <img class="home-inside3-images" src="Images/Avatar image 2.png" alt="imageNotFound">
+        <div class="insde-heading">
+            <h4>Banglore's first</h4>
+            <h2><span style="background-color: #E8D075; color: #000; padding: 0px 0px 3px 15px; border-radius: 40px;">Agency Bas</span>ed Academy <br>
+                <span style="color: #000; padding-left: 40px;"> For Digital Marketing</span>
+            </h2>
+            <p>Choose roles that resonates your skills</p>
+            <div class="home-insde-button">
+                <button class="btn btn-dark">Get AdVntr'd</button>
+            </div>
+        </div>
+    </div>
+    <!-- Home Design Ends -->
+    <!--GetAdventure -->
+    <section id="getAdventure">
+      <!-- <a href="#placements">placement</a> -->
+      <div
+        class="container shadow mb-5 bg-white rounded"
+        style="padding-right: 0px"
+      >
+        <div class="content" style="padding-right: 0px">
+          <form>
+            <!-- Your form elements go here -->
+            <div class="mb-3 col-xs-3">
+              <label for="name" class="form-label">Name <span>*</span></label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email <span>*</span></label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label"
+                >Phone No. <span>*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="Phone No."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="course" class="form-label"
+                >Course <span>*</span></label
+              >
+              <select id="course" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <button
+              type="button"
+              class="btn button-from"
+              style="background-color: #ff4b1f; color: #ffffff"
+            >
+              Request a call-back
+            </button>
+          </form>
+          <div class="right-column">
+            <h1 class="container-texts">Your dream <br />Job Awaits here.</h1>
+            <img
+              class="imageAdventure"
+              src="Images/HumanAvatar.png"
+              style="width: 200px"
+              alt="ImageNotFound"
+            />
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email <span>*</span></label>
-            <input type="text" class="form-control" id="email" placeholder="email">
-          </div>
-          <div class="mb-3">
-            <label for="phone" class="form-label">Phone No. <span>*</span></label>
-            <input type="text" class="form-control" id="phone" placeholder="Phone No.">
-          </div>
-          <div class="mb-3">
-            <label for="course" class="form-label">Course <span>*</span></label>
-            <select id="course" class="form-select">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <button type="button" class="btn" style="background-color: #FF4B1F; color: #ffffff;"> Request a
-            call-back</button>
-        </form>
-        <div class="right-column">
-          <h1 class="container-texts">Your dream <br />Job Awaits here.</h1>
-          <img class="imageAdventure" src="Images/HumanAvatar.png" style="width: 200px;" alt="ImageNotFound">
         </div>
       </div>
-    </div>
-    <!-- Hire From US -->
-    <div class="container conta-position">
-      <div style="background-color: #ffffff">
-        <h1
-          class="text"
-          style="
-            display: flex;
-            float: left;
-            text-align: left;
-            padding-left: 4%;
-            margin-top: 5%;
-          "
-        >
-          Tired of resumes that <br />
-          oversell & underdeliver? &nbsp;
-        </h1>
-        <br /><br /><br /><br /><br />
-        <p
-          style="
-            display: flex;
-            float: left;
-            text-align: left;
-            padding-left: 4%;
-          "
-        >
-          At AdVenture, we focus on practical skills & real-world <br />
-          readiness to bridge the gap between potential & performance.
+      <!--GetAdventure Ends here-->
+
+
+      <!-- Hire From US -->
+    <div class="container mb-5">
+      <div class="row" >
+          <div class="col-lg-9 shadow bg-white rounded" style=" border-radius: 20px !important;">
+              <div class="mb-3">
+                  <img class="hire-image" src="Images/Hire from us Design 1.png"
+                      style="width: 23vw; float: inline-end;" alt="ImageNotFound" />
+              </div>
+              <p style="font-size: 3vw; font-weight: bolder;">Tired of resumes that <br>
+                  oversell & underdeliver?</p>
+              <p style="font-size: 1.3vw;">At AdVenture, we focus on practical skills & real-world <br>
+                  readiness to bridge the gap between potential & performance.</p>
+              <p style="font-size: 1.5vw; font-weight: bolder;">Our graduates aren’t just book-smart,
+                  they’re action-oriented.
+              </p>
+
+              <ul id="unorder-list">
+                  <li style="font-size: 1.3vw;"><b>We prioritize hands-on projects and client collaborations,</b>
+                      giving them the
+                      experience you <br>
+                      need, not just the credentials.</li>
+                  <li style="font-size: 1.3vw;">We cultivate <b>problem-solving skills and critical thinking,</b>
+                      blending with the
+                      curriculum.</li>
+                  <li style="font-size: 1.3vw;">We build <b>confidence, communication, and a growth mindset,</b>
+                      equipping them to
+                      thrive in <br>
+                      your dynamic environment.</li>
+                  <li style="font-size: 1.3vw;"><b>No steep learning curve,</b> just immediate impact. Our graduates
+                      hit the ground
+                      running, <br>
+                      contributing meaningfully to your team</li>
+                  <li style="font-size: 1.3vw;">No empty promises, just <b>measurable results.</b> We track our
+                      graduates' success
+                      stories, and <br>
+                      we're happy to share them with you.</li>
+                  <li style="font-size: 1.3vw;"><b>No one-size-fits-all, just tailored partnerships.</b> We work
+                      closely with you to
+                      understand your <br>
+                      specific needs and match you with the perfect talent.</li>
+              </ul>
+          </div>
+          <div class="col-lg-3" style="background-color: #1B998B; font-size: 2vw; color: #ffffff; border-radius: 20px;">Hire
+              our<br />AdVisors.</div>
+      </div>
+  </div>
+  <!-- Hire From Us Ends -->
+
+    
+      <!-- hireFromUs New Form-->
+      <div
+        class="container shadow mb-5 bg-white rounded"
+        style="padding-right: 0px"
+      >
+        <div class="content" style="padding-right: 0px">
+          <div class="left-column">
+            <h1 class="container-formtexts">Find Your <br />ideal candidate.</h1>
+            <img
+              class="imageHireFromUs"
+              src="Images/HumanAvatarHire.png"
+              style="width: 300px;"
+              alt="ImageNotFound"
+            />
+          </div>
+          <form>
+            <!-- Your form elements go here -->
+            <div class="mb-3 col-xs-3">
+              <label for="name" class="form-label">Name <span>*</span></label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Company email <span>*</span></label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label"
+                >Phone No. <span>*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="Phone No."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="course" class="form-label"
+                >Designation <span>*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="designation"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="course" class="form-label"
+                >Company Name </label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="designation"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label"
+                >Drop your requirement </label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="text goes here"
+              />
+            </div>
+            <button
+              type="button"
+              class="btn-submit"
+              style="background-color: #6764E2; color: #ffffff"
+            >
+            Submit
+            </button>
+          </form>
+          
+        </div>
+      </div>
+      <!--hireFromUs New Form ends-->
+      <div class="container-lists">
+        <p><b>Ready to skip the resume shuffle and find talent that clicks?</b> Browse our graduate profiles, connect with <br>
+          our placement team, and discover the difference between hiring "qualified" and hiring ready.</p><br><br>
+          <p><b>Our AdVenture Academy Badge Holder has ideally the following traits:</b> <br> <br>
+            - Has a good understanding of verbal and communication skills <br>
+            - Has an emotional approach towards creating impressive campaigns<br>
+            - Has practical approach into campaign strategies<br>
+            - Have a good understanding of how PPC fits into the wider digital marketing mix<br>
+            - Have a passion for PPC and digital marketing in general<br>
+            - Have a good attention to detail<br>
+            - Be a self-starter who can work under their own initiative<br>
+            - A good understanding of Business, B2B and B2C models<br>
+            - A basic understanding of analytics & marketing tools <br>
+            - A strong drive to experiment, learn & grow<br>
+            - A good team player, with a positive attitude and a desire to make a difference<br>
+            - Is adaptable and can mold according to task/project requirements<br>
+            - Is trained to know how to take and implement feedback<br>
+            - Comes with inherited analytical/cognitive mindset<br>
+            - Has 15 days of agency experience<br>
+            - Understands startup culture<br>
+            - Is trained to work in cross domains<br>
+            - Collaborated with our design, developer team</p>
+      </div>
+      <h1 class="foothead">Invest in future. Hire from <span>AdVenture!</span></h1>
+      <!-- Placement-->
+      <br />
+      
+      <img
+        id="placements"
+        src="Images/PlacementPageAvatar.png"
+        alt="imageNotFound"
+        style="position: inherit; float: right; width: 200px;"
+
+      />
+      <div class="container" style="font-size: 1.1em;">
+        <p class="mb-5">
+          <b>Tired of getting lost in the crowd of rejected candidates?</b> At
+          Adventure Academy ,<br />
+          we're an agency-based academy that knows exactly what employers are
+          looking for. We've seen<br />
+          the countless resumes that pile up in the "no" pile, and we're here to
+          make sure yours isn't one of them.
         </p>
-        <img src="Images/Hire from us .png" alt="ImageNotFound" style="border: 2px solid red; display: flex; width: 100%; position: relative; left: 1%;">
-        <br /><br /><br />
-        <h5
-          style="
-            display: flex;
-            float: left;
-            text-align: left;
-            padding-left: 4%;
-          "
-        >
-          Our graduates aren’t just book-smart, they’re action-oriented.
-        </h5>
+        <p class="mb-5">
+          <b>We don't sugarcoat it.</b> We understand that many candidates lack
+          the skills, presentation, or simply<br />
+          the right mindset to land their dream job. That's why we don't waste
+          your time with empty promises.<br />
+          Instead, we take a tough-love approach, training you aggressively on
+          what not to be and how to transform into<br />
+          an asset for any company.
+        </p>
+        <p class="mb-5">
+          <b>Think of us as your boot camp for the real world.</b> We'll drill
+          you on industry-ready skills, craft a resume that speaks<br />
+          volumes, and instill the confidence you need to ace any interview. Our
+          badge and seal of approval from Adventure Academy<br />
+          is your golden ticket, a mark of distinction that tells employers
+          you're the real deal.
+        </p>
+        <p class="mb-5">
+          Don't just blend in. Stand out.Get <b>AdVentur'd!</b> and become the
+          candidate companies can't wait to hire.
+          <br />
+          We're just starting our placement engine, but stay tuned because major
+          collaborations are brewing!
+        </p>
       </div>
-      <div style="background-color: #ffffff; margin-left: 20px">
-        <h1 class="texts">Hire our AdVisors</h1>
-      </div>
-    </div>
-    <!-- Hire From Us Ends -->
-  <!-- Placement-->
-  <br>
-    <img id="placements" src="Images/PlacementPageAvatar.png" alt="imageNotFound" style="position: inherit; float: right; width: 200px;">
-    <div class="container" style="font-size: 1.1em;">
 
-      <p class="mb-5"><b>Tired of getting lost in the crowd of rejected candidates?</b> At Adventure Academy
-        ,<br />
-        we're an agency-based academy that knows exactly what employers are looking for. We've seen<br />
-        the countless resumes that pile up in the "no" pile, and we're here to make sure yours isn't one of
-        them.
-      </p>
-      <p class="mb-5">
-        <b>We don't sugarcoat it.</b> We understand that many candidates lack the skills, presentation, or
-        simply<br />
-        the right mindset to land their dream job. That's why we don't waste your time with empty
-        promises.<br />
-        Instead, we take a tough-love approach, training you aggressively on what not to be and how to
-        transform
-        into<br /> an asset
-        for any company.
-      </p>
-      <p class="mb-5">
-        <b>Think of us as your boot camp for the real world.</b> We'll drill you on industry-ready skills, craft
-        a
-        resume
-        that speaks<br />
-        volumes, and instill the confidence you need to ace any interview. Our badge and seal of approval from
-        Adventure Academy<br />
-        is your golden ticket, a mark of distinction that tells employers you're the real deal.
-      </p>
-      <p class="mb-5">
-        Don't just blend in. Stand out.Get <b>AdVentur'd!</b> and become the candidate companies can't wait to
-        hire.
-        <br />
-        We're
-        just
-        starting our placement engine, but stay tuned because major collaborations are brewing!
-      </p>
-    </div>
+      <!-- About Us -->
     
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdVenture academy</title>
-  <link rel="stylesheet" href="GetAdventure.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
-<style>
-
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    background-color: #E7EFF9;
-
-  }
-
-  .container {
-    width: 100vw;
-    border-radius: 2% !important;
-  }
-
-  .content {
-    display: flex;
-    padding: 30px;
-  }
-
-  form {
-    flex: 1;
-    /* Take up equal space */
-    padding-left: 40px;
-    /* Add padding on the right side of the form */
-  }
-
-  form label,
-  form input,
-  form button {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  /* .right-column {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  box-sizing: border-box;
-  text-align: right;
-} */
-
-  .right-column {
-    flex: 1;
-    position: relative;
-    bottom: 30px;
-  }
-
-  img {
-    max-width: 100%;
-    /* Ensure the image doesn't exceed its container */
-    display: block;
-    /* Remove extra spacing below the image */
-    margin-top: 10px;
-    /* Add some space between the text and image */
-    position: relative;
-    left: 40%;
-  }
-
-  #name {
-    width: 80%;
-    /* Adjust the width for the username input */
-  }
-
-  #email {
-    width: 80%;
-    /* Adjust the width for the password input */
-  }
-
-  #phone {
-    width: 80%;
-    /* Adjust the width for the password input */
-  }
-
-  #course {
-    width: 80%;
-    /* Adjust the width for the password input */
-  }
-
-  .btn {
-    width: 50%;
-    font-weight: bolder;
-  }
-
-  .form-label {
-    color: gray;
-  }
-
-  span {
-    color: red;
-  }
-  .conta-position div{
-    float: left;
-    clear: none;
-  }
-
-  /* section {
-    display: flex;
-    flex-direction: column
-  } */
-</style>
-
-<body> 
-  <section id="getAdventure">
-  <!-- <a href="#placements">placement</a> -->
-    <div class="container shadow  mb-5 bg-white rounded" style="padding-right: 0px;">
-      <div class="content" style="padding-right: 0px;">
-        <form>
-          <!-- Your form elements go here -->
-          <div class="mb-3 col-xs-3">
-            <label for="name" class="form-label">Name <span>*</span></label>
-            <input type="text" class="form-control" id="name" placeholder="Name">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email <span>*</span></label>
-            <input type="text" class="form-control" id="email" placeholder="email">
-          </div>
-          <div class="mb-3">
-            <label for="phone" class="form-label">Phone No. <span>*</span></label>
-            <input type="text" class="form-control" id="phone" placeholder="Phone No.">
-          </div>
-          <div class="mb-3">
-            <label for="course" class="form-label">Course <span>*</span></label>
-            <select id="course" class="form-select">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <button type="button" class="btn" style="background-color: #FF4B1F; color: #ffffff;"> Request a
-            call-back</button>
-        </form>
-        <div class="right-column">
-          <h1 class="container-texts">Your dream <br />Job Awaits here.</h1>
-          <img class="imageAdventure" src="Images/HumanAvatar.png" style="width: 200px;" alt="ImageNotFound">
-        </div>
+      <div class="container-about">
+        <img src="Images/Line art 1 v2 aboutUs.png" alt="ImageNotFound" style="width: 30%;position: relative; float: right; clear: none; margin-top: 4%;">
+        <h1 class="aboutHead"><span style="background-color: #E76F51;color: #000;padding: 1px 0px 1px 25px; border-radius: 50px;">Abou</span>t us</h1>
+        <p class="para-about"><b>Back in 2012, I was doing research for a presentation and stumbled upon a big problem.</b> <br>
+          India had tons of people with degrees, but companies couldn't find enough qualified workers! <br>
+          Graduates were stuck without jobs, while big companies didn't hire them. <br><br>
+          <b>This surprised me, especially considering how many people live in India.</b><br>
+          After digging deeper, I discovered a huge gap in skills: only 3 out of 100 people were considered <br>
+          "ready" for good jobs. Many ended up stuck in low-paying roles like customer service, while <br>
+          countries like the UK and USA zoomed ahead. <br><br>
+         <b> I had experience both in business (startups) and teaching (tutoring), and I wanted to <br>
+          use both to help young people succeed.</b><br>
+          So, after 7 years in the corporate world, I took a leap - I quit my job and started a learning center <br>
+          called Adventure Academy. <br> <br>
+         <b>Adventure Academy isn't just about getting good grades.</b><br>
+          We help students develop important skills like problem-solving and thinking critically.We encourage <br>
+          them to try new things, learn from their mistakes, and discover what they're good at. <br> <br>
+          <b>We also have a digital marketing company.</b><br>
+          This gives us real-world examples to teach our students, helping them overcome their fears <br>
+          and step into the world of possibilities.
+        </p>
       </div>
-    </div>
-    <!-- Hire From US -->
-    <div class="container conta-position">
-      <div style="background-color: #ffffff;">
-        <h1 class="text">Hello &nbsp;</h1>
+      <div class="container-small">
+        <p>In short, Adventure Academy is all about empowering students to become confident, <br>
+          skilled individuals who can tackle any challenge!</p>
       </div>
-      <div style="background-color: #ffffff; margin-left: 20px;">
-        <h1 class="texts">Dude</h1>
-      </div>
-    </div>
-    <!-- Hire From Us Ends -->
-  <!-- Placement-->
-  <br>
-    <img id="placements" src="Images/PlacementPageAvatar.png" alt="imageNotFound" style="position: inherit; float: right; width: 200px;">
-    <div class="container" style="font-size: 1.1em;">
-
-      <p class="mb-5"><b>Tired of getting lost in the crowd of rejected candidates?</b> At Adventure Academy
-        ,<br />
-        we're an agency-based academy that knows exactly what employers are looking for. We've seen<br />
-        the countless resumes that pile up in the "no" pile, and we're here to make sure yours isn't one of
-        them.
-      </p>
-      <p class="mb-5">
-        <b>We don't sugarcoat it.</b> We understand that many candidates lack the skills, presentation, or
-        simply<br />
-        the right mindset to land their dream job. That's why we don't waste your time with empty
-        promises.<br />
-        Instead, we take a tough-love approach, training you aggressively on what not to be and how to
-        transform
-        into<br /> an asset
-        for any company.
-      </p>
-      <p class="mb-5">
-        <b>Think of us as your boot camp for the real world.</b> We'll drill you on industry-ready skills, craft
-        a
-        resume
-        that speaks<br />
-        volumes, and instill the confidence you need to ace any interview. Our badge and seal of approval from
-        Adventure Academy<br />
-        is your golden ticket, a mark of distinction that tells employers you're the real deal.
-      </p>
-      <p class="mb-5">
-        Don't just blend in. Stand out.Get <b>AdVentur'd!</b> and become the candidate companies can't wait to
-        hire.
-        <br />
-        We're
-        just
-        starting our placement engine, but stay tuned because major collaborations are brewing!
+      <!--About Us ends here-->
+      
+      <!--Our Vision-->
+      <div class="container-vision">
+        <img src="Images/Line art 1 v2.png" alt="ImageNotFound" style="width:12%;position: relative; float: right; clear: none; margin-top: 2%;">
+      <h1 class="visionHead">Our<span style="background-color: #E76F51;color: #000;padding: 1px 6px 1px 10px; border-radius: 50px;">vision</span></h1>
+      <p ><b>We see a talent gap india.</b> People are bursting with ideas and starting ventures,but finding <br>
+         skilled teams is a struggle. On the other hand,<b>freshers and career seekers are eager for <br> 
+          opportunities. </b> They want to jump in and contribute,but lack the skills or the skills or the right platform to connect <br> 
+          with the right companies.</b><br><br>
+          <b>Here's where we come in.</b> We're building a <b> bridge to close this gap.</b> We equip passionate <br>
+          individuals with the skills they need and connect them with the companies that need them.</b><br><br>
+          Imagine: <b>Confident graduates landing their dream jobs at exciting startups.</b> Imagine innovative <br>
+          companies finding the perfect talent to fuel their growth. That's what we see in the future, and <br>
+          that's what we're working towards every day. <br><br>
+          We're not just bridging gaps, we're sparking connections and inspiring success stories.
       </p>
     </div>
-    
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-</body>
+      <!--Our vision ends here-->
 
+    <!--Our Competitors-->
+    <div class="conatiner-comp">
+      <img src="Images/Twinkling star .png" alt="ImageNotFound" style="width:3%;position: relative; float: left; clear: none; margin-top: 3%;margin-left:5%;">
+      <img src="Images/Twinkling star .png" alt="ImageNotFound" style="width:2%;position: relative; float: left; clear: none; margin-top: 6%;margin-left: 1;">
+      <img src="Images/Line art 1 v2 comp.png" alt="ImageNotFound" style="width:15%;position: relative; float: right; clear: none; margin-top: 3%;margin-left:5%;">
+      <h1>
+        Our Com<span style="background-color: #E76F51;color: #000;padding: 1px 20px 10px 1px; border-radius: 50px;">petitors</span>
+      </h1>
+      <p>
+        <span style="color: #212529; font-size: 18px;">Confused about your career? Everyone's screaming <b>"Digital Marketing is the future!"</b><br>
+        but hold on. Before you dive headfirst, here's some real talk:</span>
+        <ul style="list-style-type: circle; padding-left: 50px;">
+          <li>Is DM really for you? Do you enjoy writing, analysis, and creative problem-solving?<br></li><br>
+          <li>Fancy certificates and year-long courses don't guarantee a job. Focus on practical skills<br>
+          and targeted preparation.</li><br>
+          <li>Job assistance, not guarantees. We'll equip you to fish, not just hand you the fish.<br></li><br>
+          <li><b>Forget</b> colorful classrooms and <b>"ex-big" names.</b> We offer real-world projects,<br></li>
+          case studies, and competitor analysis.<br><br>
+         <li>No fancy fees or BS. Straightforward learning that adds value.</li>
+        </ul>
+        </p>
+        
+        <p>
+        <b>This is how you get cheated</b>
+        <ul style="list-style-type: circle;padding-left: 50px;">
+          <li><b>Bait and switch:</b> Promise the moon, deliver generic tools and endless theory. <br>
+          You're left with fancy certificates, not real skills. <br><br></li>
+          <li>Year-long slogs: Drown you in long, irrelevant courses. By the time you're "qualified," <br>
+          the market has moved on.</li><br>
+          <li>Job guarantee mirage: They wave a magic wand, but reality? A WhatsApp group with <br>
+          random job postings. No personalized support, just empty promises.</li><br>
+          <li>All flash, no substance: Fancy offices, big names, colorful brochures. But behind the curtain? <br>
+          Weak training and zero career guidance.</li><br>
+          <li>Fake awards: Boast about meaningless trophies, conveniently forgetting they're often paid promotions.</li>
+        </ul>
+      </p>
+      <p>
+        <b>Our counterplay</b>
+        <ul style="list-style-type: circle;padding-left: 50px;">
+          <li>Real-world relevance: We focus on practical skills you'll actually use, not just textbook jargon. <br>
+          Live projects, case studies, and competitor analysis – get ready to roll up your sleeves!</li><br>
+          <li>Targeted training: No one-size-fits-all here. We assess your strengths and tailor your learning to<br>
+          your ideal career path. Internships help you discover your passion.</li><br>
+          <li>Job assistance, not guarantees: We equip you with the tools and confidence to land your dream job,<br>
+          not just hand you a random opening.</li><br>
+          <li>Authenticity, not glitz: We're about substance, not smoke and mirrors. No fancy facades, just honest<br>
+          training that delivers results.</li><br>
+          <li>Industry-standard prep: Forget generic interview tips. We train you for real-world scenarios,<br>
+          from body language to answering killer questions.</li>
+        </ul>
+        </p>
+        <p style="margin-top: 0%;">
+           <b>We’re not here to feed you the fish, we’re teaching you how to fish</b> <br>
+           <span style="padding-left: 2%; color: #212529;">We want you to be confident, adaptable, and ready to thrive in the ever-evolving digital landscape</span>
+        </p>
+        <p style="margin-top: 0%;">
+         <b> So ditch the hype and join us. <br></b>
+          <span style="padding-left: 2%; color: #212529;">Fill out that form, meet us at the office, and let's talk about building your real career, not just collecting certificates. <br></span>
+            <span style="padding-left: 2%; color: #212529;">We'll show you why we're different, and why choosing us is the smartest decision you'll ever make.</span> 
+        </p>
+        <P style="margin-top: 0%;">
+         <b> No pressure, just honest conversation. <br></b>
+          <span style="padding-left: 2%; color: #212529;">P.S. Google-approved certifications? We got those too. Just another bonus on your journey to success. </span>
+        </p>
+  </div>
+    <!--Our Competitors ends here-->
+
+    <!--Footer-->
+      <div class="container-footer">
+        <p>Skill is an investment. <br>
+          Make skill-centric decision
+          <button class="btnfoot btn-dark btn-lg" href="#" style="float: right;">Get AdVntr'd</button>
+        </p>  
+      </div>
+      <div class="container-empty" style="background-color: #20232B;">
+<br><br><br><br><br><br><br>  <br><br><br>
+      </div>
+    <!--Footer ends here-->
+
+    <!--Authors-->
+<div class="container-fluid" style="color: #ffffff;">
+  <div class="container-shruthi" style="width: fit-content; background-color: #B486AB; margin:40px 0px 0px 40px; border-radius: 20px; display: flex;">
+    <img src="Images/Shruti bharadwaj.png" alt="ImageNotFound" style="width: 20%;">
+    <div style="margin-left: 5%;">
+      <h3>Shruthi Bharadwaj</h3>
+      <p>Speaker | Entrepreneur | Mentor</p>
+      <div style="display: flex;">
+        <ul class="content-shruthi">
+          <li>13+ Years Experience</li>
+          <li>Mentor at Startup TN</li>
+          <li>Speaker at MSME, CEDOK, LUBK,<br>
+            Ubuntu Consortium</li>
+        </ul>
+        <ul class="content-shruthi">
+          <li>13+ Years Experience</li>
+          <li>Mentor at Startup TN</li>
+          <li>Speaker at MSME, CEDOK, LUBK,<br>
+            Ubuntu Consortium</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-prem" style="width: 100%; background-color: #A882DD; margin:70px 40px 100px 0px; border-radius: 20px; float: right; ">
+    <img src="Images/Prem.png" alt="ImageNotFound" style="width: 25%; float: right;">
+    <div style="margin-right: 5%;">
+      <div style="display: flex; flex-direction: column; align-items: end;">
+        <h3 style="margin-right: 5%;">Prem Anand S</h3>
+      <p style="margin-right: 5%;">Speaker | Entrepreneur | Mentor</p>
+      </div>
+      <div style="display: flex; float: right; margin-right: 5%;">
+        <ul class="content-shruthi">
+          <li>13+ Years Experience</li>
+          <li>Mentor at Startup TN</li>
+          <li>Speaker at MSME, CEDOK, LUBK,<br>
+            Ubuntu Consortium</li>
+        </ul>
+        <ul class="content-shruthi">
+          <li>13+ Years Experience</li>
+          <li>Mentor at Startup TN</li>
+          <li>Speaker at MSME, CEDOK, LUBK,<br>
+            Ubuntu Consortium</li>
+        </ul>
+      </div>
+  </div>
+</div>
+    <!--Author ends here-->
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
